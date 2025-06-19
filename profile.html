@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>자기소개 페이지</title>
+    <style>
+        body 
+        {
+            font-family: "맑은 고딕", sans-serif;
+            background-color: gainsboro;
+            padding: 20px;
+        }
+        
+        h1 
+        {
+            color: black;
+            text-align: center;
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+        h3
+        {
+            text-align: center;
+        }
+        
+        .home 
+        {
+            width: 90%;
+            margin: auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        
+        .menu 
+        {
+            text-align: center;
+            margin: 10px ;
+            padding: 10px;
+            background-color: skyblue;
+            border-radius: 5px;
+        }
+        
+        .menu a 
+        {
+            color: white;
+            text-decoration: none;
+            padding: 8px 15px;
+            background-color: skyblue;
+            border-radius: 3px;
+            margin: 5px;
+            font-size: 16px;
+        }
+        
+        .menu a:hover 
+        {
+            background-color: white;
+            color: blue;
+        }
+        
+        .me 
+        {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        
+        .left, .right 
+        {
+            width: 49%;
+        }
+        
+        .box 
+        {
+            background-color: white;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            border: 2px solid gainsboro;
+        }
+        
+        .profile 
+        {
+            border: 2px solid gainsboro;
+        }
+        
+        .photo img 
+        {
+            width: 30%;
+            border: 1px solid gainsboro;
+            border-radius: 5px;
+            display: block;
+            margin: auto;
+        }
+        
+        .music 
+        {
+            border: 2px solid gainsboro;
+            text-align: center;
+        }
+        
+        table 
+        {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1px ;
+        }
+        
+        th, td 
+        {
+            padding: 8px;
+            text-align: center;
+            border: 1px solid skyblue;
+        }
+        
+        th 
+        {
+            background-color: skyblue;
+            color: white;
+        }
+               
+        .hobby 
+        {
+            border: 2px solid gainsboro;
+        }
+        
+        .food 
+        {
+            border: 2px solid gainsboro;
+
+        }
+                
+        select 
+        {
+            padding: 5px;
+            border-radius: 3px;
+            border: 2px solid skyblue;
+        }
+        
+        iframe 
+        {
+            width: 100%;
+            border: none;
+            margin-top: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <br>
+    <div class="home">
+        <h1 onmouseover="this.style.color='skyblue'" onmouseout="this.style.color='black'">자기소개 페이지</h1>
+        
+        <div class="menu">
+            <a href="./join-membership.html">회원가입</a>
+            <a href="./main.html">메인페이지</a>
+            <a href="#" onclick="alert('아쉽지만 그런건 없습니다.')">게시판</a>
+            <a href="./event.html">이벤트 목록</a>
+        </div>
+        
+        <div class="me">
+            <div class="left">
+                <div class="box">
+                    <div class="photo">
+                        <img src="./사진1.jpg" alt="내 사진">
+                    </div>
+                </div>               
+                <div class="box">
+                    <h3>시간표</h3>
+                    <table>
+                        <tr>
+                            <th>교시</th>
+                            <th>과목</th>
+                            <th>시간</th>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>대학생활길라잡이</td>
+                            <td>10:00~11:00</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>사고와표현</td>
+                            <td>11:00~12:00</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>점심시간</td>
+                            <td>12:00~13:00</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>데이터분석</td>
+                            <td>13:00~14:00</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>인공지능기초</td>
+                            <td>14:00~15:00</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>HTML</td>
+                            <td>15:00~16:00</td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>파이썬</td>
+                            <td>16:00~17:00</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            
+            <div class="right">
+                <div class="box profile">
+                    <h2>내 정보</h2>
+                    <p><strong>이름:</strong> 진화용</p>
+                    <p><strong>학과:</strong> 미래인재학부</p>
+                    <p><strong>학번:</strong> 2506012</p>
+                    <p><strong>나의 상태:</strong>
+                        <select name="mind">
+                            <option value="good">좋음</option>
+                            <option value="soso">보통</option>
+                            <option value="bad">나쁨</option>
+                        </select>
+                    </p>
+                </div>
+                
+                <div class="box music">
+                    <h3>노래: Butter-Fly</h3>
+                    <iframe width="100%" height="60" src="https://www.youtube.com/embed/5BONQ39cP9k" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                
+                <div class="box hobby">
+                    <h2>내 취미</h2>
+                    <ul>
+                        <li>⚽축구 - 주말 조기 축구</li>
+                        <li>🎣낚시 - 바다낚시</li>
+                        <li>🏕캠핑 - 친구들과 캠핑가기</li>
+                        <li>🏍바이크 - 주말 드라이브</li>
+                        <li>🧘🏾‍♂️휴식 - 자기</li>
+                    </ul>
+                        <p>출처 : 이모지 emojiall</p>
+                </div>
+                
+                <div class="box food">
+                    <h3>좋아하는 조합</h3>
+                    <label>
+                        &nbsp;
+                        &nbsp;
+                        &nbsp;
+                        &nbsp;
+                        &nbsp;
+                        &nbsp;                     
+                        &nbsp;
+                        <img src="./회.jpg" alt="회" width="200" height="100">
+                        <input type="radio" name="food" value="fish">
+                        &nbsp;
+                        &nbsp;
+                        &nbsp;
+                        &nbsp;                     
+                        &nbsp;
+                        &nbsp;
+                        &nbsp;
+                        &nbsp;
+                        &nbsp;
+                        &nbsp;
+                        &nbsp;
+                        &nbsp;
+                        &nbsp;
+                        &nbsp;
+                        &nbsp;
+                        &nbsp;
+                        <input type="radio" name="alcohol" value="soju">
+                        <img src="./소주.jpg" alt="소주" width="200" height="100">
+                    </label>
+                    <br>
+                    <label>
+                        &nbsp;
+                        &nbsp;
+                        &nbsp;
+                        &nbsp;
+                        &nbsp;
+                        &nbsp;                     
+                        &nbsp;
+                        <img src="./삼겹살.jpg" alt="삼겹살" width="200" height="100">
+                        <input type="radio" name="food" value="pig">
+                        &nbsp;
+                        &nbsp;
+                        &nbsp;
+                        &nbsp;                     
+                        &nbsp;
+                        &nbsp;
+                        &nbsp;
+                        &nbsp;
+                        &nbsp;
+                        &nbsp;
+                        &nbsp;
+                        &nbsp;
+                        &nbsp;
+                        &nbsp;
+                        &nbsp;
+                        &nbsp;
+                        <input type="radio" name="alcohol" value="beer">
+                        <img src="./맥주.jpg" alt="맥주" width="200" height="100">
+                    </label>
+                    <br>
+                    <label>
+                        &nbsp;
+                        &nbsp;
+                        &nbsp;
+                        &nbsp;
+                        &nbsp;
+                        &nbsp;                     
+                        &nbsp;
+                        <img src="./해물탕.jpg" alt="해물탕" width="200" height="100">
+                        <input type="radio" name="food" value="haemultang">
+                        &nbsp;
+                        &nbsp;
+                        &nbsp;
+                        &nbsp;                     
+                        &nbsp;
+                        &nbsp;
+                        &nbsp;
+                        &nbsp;
+                        &nbsp;
+                        &nbsp;
+                        &nbsp;
+                        &nbsp;
+                        &nbsp;
+                        &nbsp;
+                        &nbsp;
+                        &nbsp;
+                        <input type="radio" name="alcohol" value="wine">
+                        <img src="./와인.jpg" alt="와인" width="200" height="100">
+                    </label>
+                    <br>
+                    <label>
+                        &nbsp;
+                        &nbsp;
+                        &nbsp;
+                        &nbsp;
+                        &nbsp;
+                        &nbsp;                     
+                        &nbsp;
+                        <img src="./치킨.jpg" alt="치킨" width="200" height="100">
+                        <input type="radio" name="food" value="chicken">
+                        &nbsp;
+                        &nbsp;
+                        &nbsp;
+                        &nbsp;                     
+                        &nbsp;
+                        &nbsp;
+                        &nbsp;
+                        &nbsp;
+                        &nbsp;
+                        &nbsp;
+                        &nbsp;
+                        &nbsp;
+                        &nbsp;
+                        &nbsp;
+                        &nbsp;
+                        &nbsp;
+                        <input type="radio" name="alcohol" value="liquor">
+                        <img src="./양주.jpg" alt="와인" width="200" height="100">
+                    </label>
+                </div>
+            </div>
+        </div>       
+    </div>
+</body>
+</html>

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>회원가입 페이지</title>
+    <script>
+        function check() 
+            {
+
+                let text = "";
+                text += "사용자 ID : " + document.a.id.value + "\n";
+                text += "비밀번호 : " + document.a.pw.value + "\n";
+                text += "이름 : " + document.a.name.value + "\n";
+                text += "학번 : " + document.a.num.value + "\n";
+                alert(text)
+            }
+
+    </script>
+    <style>
+         body 
+            {
+                font-family: '맑은 고딕';
+                background-color: gainsboro;
+                margin: 0;
+                padding: 20px;
+            }
+        hr
+            {
+                background-color: skyblue;
+                height: 5px;
+                border: 0;
+            }
+        .box
+            {
+                background-color:white;
+                width: 100%;
+                height: 70%;
+                max-width: 300px;
+                margin: 10px auto;
+                padding: 50px;
+                border: 2px solid skyblue;
+                border-radius: 50px 50px ;
+
+            }
+        .join-box 
+            {
+                background-color: white;
+                width: 400px;
+                margin: 30px auto;
+                padding: 20px;
+                border-radius: 10px;
+            }
+        .join-box>a 
+            {
+                margin-bottom: 5px;
+                font-weight: bold;
+                color: #555;
+            }    
+        h1 
+            {
+                color: skyblue;
+                text-align: center;
+                font-size: 30px;
+                margin-bottom: 20px;
+            }
+        .menu 
+            {
+                display: flex;
+                justify-content: space-around;
+                margin: 30px;
+            }
+        
+        .menu a 
+            {
+                text-decoration: none;
+                color: skyblue;
+                padding: 8px 15px;
+                border: 1px solid skyblue;
+                border-radius: 5px;
+                transition: all 0.3s;
+            }
+        .menu a:hover 
+            {
+                background-color: white;
+                color: blue;
+            }
+         
+        input:hover, textarea:hover 
+            {
+                background : aliceblue;
+            }
+        input[type=id]:focus, input[type=password]:focus, input[type=text]:focus {font-size : 100%; }
+        
+    </style>
+</head>
+<body>
+ <div class="box">
+    <h1> 회 원 가 입 </h1>
+    <hr>
+    <br>
+    <form name ="a" method="get">
+        사용자 ID  : <input type="id" name="id" value="" size="15" placeholder="ID">
+        <br>
+        <br>
+        비밀번호 : <input type="password" name="pw" value="" size="15" placeholder="PW">
+        <br>
+        <br>
+        이름 : <input type="text" name="name" value="" size="15" placeholder="진화용">
+        <br>
+        <br>
+        학번 : <input type="text" name="num" value="" size="15" placeholder="2506012">
+        <br>
+        <br>
+        <input type="radio" value="1" name="sex">
+        남자
+        <input type="radio" value="2" name="sex">
+        여자
+        <br>
+        <br>
+        생년월일 : 
+        <select name="year">
+            <option value="1991">1991년</option>
+            <option value="1992">1992년</option>
+            <option value="1993">1993년</option>
+            <option value="1994">1994년</option>
+            <option value="1995">1995년</option>
+            <option value="1996">1996년</option>
+            <option value="1997">1997년</option>
+            <option value="1998">1998년</option>
+            <option value="1999">1999년</option>
+            <option value="2000">2000년</option>
+            <option value="2001">2001년</option>
+            <option value="2002">2002년</option>
+            <option value="2003">2003년</option>
+            <option value="2004">2004년</option>
+        </select>
+        <select name="month">
+            <option value="1">1월</option>
+            <option value="2">2월</option>
+            <option value="3">3월</option>
+            <option value="4">4월</option>
+            <option value="5">5월</option>
+            <option value="6">6월</option>
+            <option value="7">7월</option>
+            <option value="8">8월</option>
+            <option value="9">9월</option>
+            <option value="10">10월</option>
+            <option value="11">11월</option>
+            <option value="12">12월</option>
+        </select>
+        <select name="day">
+        <option value="1">1일</option>
+        <option value="2">2일</option>
+        <option value="3">3일</option>
+        <option value="4">4일</option>
+        <option value="5">5일</option>
+        <option value="6">6일</option>
+        <option value="7">7일</option>
+        <option value="8">8일</option>
+        <option value="9">9일</option>
+        <option value="10">10일</option>
+        <option value="11">11일</option>
+        <option value="12">12일</option>
+        <option value="13">13일</option>
+        <option value="14">14일</option>
+        <option value="15">15일</option>
+        <option value="16">16일</option>
+        <option value="17">17일</option>
+        <option value="18">18일</option>
+        <option value="19">19일</option>
+        <option value="20">20일</option>
+        <option value="21">21일</option>
+        <option value="22">22일</option>
+        <option value="23">23일</option>
+        <option value="24">24일</option>
+        <option value="25">25일</option>
+        <option value="26">26일</option>
+        <option value="27">27일</option>
+        <option value="28">28일</option>
+        <option value="29">29일</option>
+        <option value="30">30일</option>
+        <option value="31">31일</option>
+        </select>
+        <br>
+        <br>
+        나의 기분<br><input type="range" name="points" min="0" max="10" step="1" value="5" >
+        <br>
+        <span>나쁨</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>좋음</span>
+        <br>
+        <br>
+        나의 색상 <input type="color" name="mycolor">  
+        <br>
+        <br>
+        <input type="button" onclick="check()" value="확인">
+        <br>
+        <br>
+        <hr>
+        <div class="menu">
+        <a href="profile.html">자기소개</a>
+        <a href="./main.html">메인페이지</a>
+        </div>
+    </form>
+</div>
+</body>
+</html>

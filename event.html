@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이벤트 설명 페이지</title>
+    <style>
+        body 
+        {
+            font-family: Arial, sans-serif;
+            background-color: gainsboro;
+            margin: 50px;
+            padding: 20px;
+        }
+
+        hr 
+        {
+            background-color: skyblue;
+            height: 5px;
+            border: 0;
+        }
+        
+        .box 
+        {
+            width: 80%;
+            max-width: 600px;
+            margin: auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        
+        h1 
+        {
+            color: black;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+            
+        p 
+        {
+            text-align: center;
+            margin: 15px;
+            line-height: 1.6;
+        }
+        
+        .event-box 
+        {
+            background-color: white;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 8px;
+            transition: all 0.3s;
+        }        
+        
+        .event-title 
+        {
+            font-weight: bold;
+            color: blue;
+            margin-bottom: 5px;
+        }
+        
+                
+        .menu 
+        {
+            display: flex;
+            justify-content: space-around;
+            margin: 30px;
+        }
+        
+        .menu a 
+        {
+            text-decoration: none;
+            color: blue;
+            padding: 8px 15px;
+            border: 1px solid blue;
+            border-radius: 5px;
+            transition: all 0.3s;
+        }
+        
+        .menu a:active 
+        {
+            background-color: skyblue;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h1 onmouseover="this.style.color='skyblue'" onmouseout="this.style.color='black'">이벤트 설명 페이지</h1>
+        <hr>
+        
+        <div class="event-box">
+            <div class="event-title">마우스 오버 이벤트</div>
+            <div class="event-desc">페이지 제목에 마우스를 올리면 글자 색상이 변합니다. (onmouseover, onmouseout)</div>
+        </div>
+        
+        <div class="event-box">
+            <div class="event-title">더블클릭 이벤트</div>
+            <div class="event-desc">자기소개, 회원가입에 마우스를 더블클릭하면 링크로 들어가집니다. (ondblclick)</div>
+        </div>
+        
+        <div class="event-box">
+            <div class="event-title">클릭 이벤트</div>
+            <div class="event-desc">게시판 클릭 시 메시지 창이 나옵니다. (onclick)</div>
+        </div>
+        
+        <div class="event-box">
+            <div class="event-title">시간 표시</div>
+            <div class="event-desc">새로고침 할 때 현재 시간이 출력됩니다. (let current = new Date())</div>
+        </div>
+        
+        <hr>
+        
+        <div class="menu">
+            <a href="main.html" ondblclick="window.location.href='main.html'">메인페이지</a>
+            <a href="profile.html" ondblclick="window.location.href='profile.html'">자기소개</a>
+            <a href="join-membership.html" ondblclick="window.location.href='join-membership.html'">회원가입</a>
+        </div>
+    </div>
+
+</body>
+</html>
